@@ -13,7 +13,7 @@ func TestTransferTx(t *testing.T) {
 
 	account1 := createRandomAccount(t)
 	account2 := createRandomAccount(t)
-	fmt.Println(">> before:", account1, account2)
+	fmt.Println(">> before:", account1.Balance, account2.Balance)
 
 	// run n concurrent transfer transaction
 	n := 5
